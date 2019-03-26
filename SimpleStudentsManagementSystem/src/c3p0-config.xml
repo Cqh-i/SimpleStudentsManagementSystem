@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<c3p0-config>
+	<!-- * @Description: c3p0配置 * @author Cqh_i * @date 2018年10月6日 下午7:27:33    -->
+	<default-config>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property><!--mysql驱动包 -->
+		<!--数据库地址 ,serverTimezone=GMT%2b8,解决java与MySQL之间总差8个小时的问题; 设置编码 -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/stus?useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=GMT%2B8</property> 
+		<property name="user">root</property><!--用户名 -->
+		<property name="password">123456</property><!--用户密码 -->
+		<property name="initialPoolSize">6</property> <!-- 初始化时获取连接数 Default: 3 -->
+		<property name="maxPoolSize">50</property><!-- 接池中保留的最大连接数。默认值: 15 -->
+		<property name="maxIdleTime">1000</property><!-- 最大空闲时间，多少秒内未使用则连接被丢弃。若为0则永不丢弃。默认值: 0 -->
+	</default-config>
+
+</c3p0-config>

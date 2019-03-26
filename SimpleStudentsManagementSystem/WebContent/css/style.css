@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.center-in-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*
+	*下面是对不同浏览器支持的语句
+	*/
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
