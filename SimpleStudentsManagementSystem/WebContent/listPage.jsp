@@ -73,7 +73,7 @@ function doDelete(sid) {
 				</c:forEach>
 					<c:if test="${pageBean.currentPage != pageBean.totalPage }">
 						<a href="StudentListPageServlet?currentPage=${pageBean.currentPage + 1 }">下一页</a> | 
-				<a href="StudentListPageServlet?currentPage =${ pageBean.totalPage }">尾页 </a>
+				<a href="StudentListPageServlet?currentPage=${ pageBean.totalPage }">尾页 </a>
 					</c:if>
 				</td>
 			</tr>
